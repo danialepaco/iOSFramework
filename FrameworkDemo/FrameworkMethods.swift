@@ -7,7 +7,8 @@
 //
 
 import Foundation
+import Alamofire
 
-func getMessage(_ greeting: String) -> String {
-    return greeting + "from a framework"
+public func getMessage(_ greeting: String) -> String {
+    return greeting + " from a framework"
 }
