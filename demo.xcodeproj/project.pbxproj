@@ -13,18 +13,19 @@
 		2499F842235777F30006908C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2499F841235777F30006908C /* Assets.xcassets */; };
 		2499F845235777F30006908C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2499F844235777F30006908C /* Preview Assets.xcassets */; };
 		2499F848235777F30006908C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2499F846235777F30006908C /* LaunchScreen.storyboard */; };
-		2499F858235779EF0006908C /* framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 2499F856235779EF0006908C /* framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2499F85B235779EF0006908C /* framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2499F854235779EF0006908C /* framework.framework */; };
-		2499F85C235779EF0006908C /* framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2499F854235779EF0006908C /* framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2499F86D2357B0EF0006908C /* FrameworkDemo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2499F86B2357B0EF0006908C /* FrameworkDemo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2499F8702357B0EF0006908C /* FrameworkDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2499F8692357B0EF0006908C /* FrameworkDemo.framework */; };
+		2499F8712357B0EF0006908C /* FrameworkDemo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2499F8692357B0EF0006908C /* FrameworkDemo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2499F8752357B1290006908C /* FrameworkMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2499F8612357AE3F0006908C /* FrameworkMethods.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2499F859235779EF0006908C /* PBXContainerItemProxy */ = {
+		2499F86E2357B0EF0006908C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2499F830235777F20006908C /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2499F853235779EF0006908C;
-			remoteInfo = framework;
+			remoteGlobalIDString = 2499F8682357B0EF0006908C;
+			remoteInfo = FrameworkDemo;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -35,7 +36,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2499F85C235779EF0006908C /* framework.framework in Embed Frameworks */,
+				2499F8712357B0EF0006908C /* FrameworkDemo.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,9 +52,10 @@
 		2499F844235777F30006908C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2499F847235777F30006908C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2499F849235777F30006908C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2499F854235779EF0006908C /* framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2499F856235779EF0006908C /* framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = framework.h; sourceTree = "<group>"; };
-		2499F857235779EF0006908C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2499F8612357AE3F0006908C /* FrameworkMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkMethods.swift; sourceTree = "<group>"; };
+		2499F8692357B0EF0006908C /* FrameworkDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FrameworkDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2499F86B2357B0EF0006908C /* FrameworkDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameworkDemo.h; sourceTree = "<group>"; };
+		2499F86C2357B0EF0006908C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +63,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2499F85B235779EF0006908C /* framework.framework in Frameworks */,
+				2499F8702357B0EF0006908C /* FrameworkDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2499F851235779EF0006908C /* Frameworks */ = {
+		2499F8662357B0EF0006908C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -79,7 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				2499F83A235777F20006908C /* demo */,
-				2499F855235779EF0006908C /* framework */,
+				2499F86A2357B0EF0006908C /* FrameworkDemo */,
 				2499F839235777F20006908C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,7 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				2499F838235777F20006908C /* demo.app */,
-				2499F854235779EF0006908C /* framework.framework */,
+				2499F8692357B0EF0006908C /* FrameworkDemo.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,23 +117,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		2499F855235779EF0006908C /* framework */ = {
+		2499F86A2357B0EF0006908C /* FrameworkDemo */ = {
 			isa = PBXGroup;
 			children = (
-				2499F856235779EF0006908C /* framework.h */,
-				2499F857235779EF0006908C /* Info.plist */,
+				2499F8612357AE3F0006908C /* FrameworkMethods.swift */,
+				2499F86B2357B0EF0006908C /* FrameworkDemo.h */,
+				2499F86C2357B0EF0006908C /* Info.plist */,
 			);
-			path = framework;
+			path = FrameworkDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2499F84F235779EF0006908C /* Headers */ = {
+		2499F8642357B0EF0006908C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2499F858235779EF0006908C /* framework.h in Headers */,
+				2499F86D2357B0EF0006908C /* FrameworkDemo.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,29 +153,29 @@
 			buildRules = (
 			);
 			dependencies = (
-				2499F85A235779EF0006908C /* PBXTargetDependency */,
+				2499F86F2357B0EF0006908C /* PBXTargetDependency */,
 			);
 			name = demo;
 			productName = demo;
 			productReference = 2499F838235777F20006908C /* demo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2499F853235779EF0006908C /* framework */ = {
+		2499F8682357B0EF0006908C /* FrameworkDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2499F85D235779EF0006908C /* Build configuration list for PBXNativeTarget "framework" */;
+			buildConfigurationList = 2499F8722357B0EF0006908C /* Build configuration list for PBXNativeTarget "FrameworkDemo" */;
 			buildPhases = (
-				2499F84F235779EF0006908C /* Headers */,
-				2499F850235779EF0006908C /* Sources */,
-				2499F851235779EF0006908C /* Frameworks */,
-				2499F852235779EF0006908C /* Resources */,
+				2499F8642357B0EF0006908C /* Headers */,
+				2499F8652357B0EF0006908C /* Sources */,
+				2499F8662357B0EF0006908C /* Frameworks */,
+				2499F8672357B0EF0006908C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = framework;
-			productName = framework;
-			productReference = 2499F854235779EF0006908C /* framework.framework */;
+			name = FrameworkDemo;
+			productName = FrameworkDemo;
+			productReference = 2499F8692357B0EF0006908C /* FrameworkDemo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -188,7 +191,7 @@
 					2499F837235777F20006908C = {
 						CreatedOnToolsVersion = 11.1;
 					};
-					2499F853235779EF0006908C = {
+					2499F8682357B0EF0006908C = {
 						CreatedOnToolsVersion = 11.1;
 					};
 				};
@@ -207,7 +210,7 @@
 			projectRoot = "";
 			targets = (
 				2499F837235777F20006908C /* demo */,
-				2499F853235779EF0006908C /* framework */,
+				2499F8682357B0EF0006908C /* FrameworkDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -223,7 +226,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2499F852235779EF0006908C /* Resources */ = {
+		2499F8672357B0EF0006908C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -243,20 +246,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2499F850235779EF0006908C /* Sources */ = {
+		2499F8652357B0EF0006908C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2499F8752357B1290006908C /* FrameworkMethods.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2499F85A235779EF0006908C /* PBXTargetDependency */ = {
+		2499F86F2357B0EF0006908C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2499F853235779EF0006908C /* framework */;
-			targetProxy = 2499F859235779EF0006908C /* PBXContainerItemProxy */;
+			target = 2499F8682357B0EF0006908C /* FrameworkDemo */;
+			targetProxy = 2499F86E2357B0EF0006908C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -389,6 +393,7 @@
 		2499F84D235777F30006908C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"demo/Preview Content\"";
@@ -409,6 +414,7 @@
 		2499F84E235777F30006908C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"demo/Preview Content\"";
@@ -426,7 +432,7 @@
 			};
 			name = Release;
 		};
-		2499F85E235779EF0006908C /* Debug */ = {
+		2499F8732357B0EF0006908C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -436,14 +442,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = framework/Info.plist;
+				INFOPLIST_FILE = FrameworkDemo/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.danialepaco.framework;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danialepaco.FrameworkDemo;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -453,7 +459,7 @@
 			};
 			name = Debug;
 		};
-		2499F85F235779EF0006908C /* Release */ = {
+		2499F8742357B0EF0006908C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -463,14 +469,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = framework/Info.plist;
+				INFOPLIST_FILE = FrameworkDemo/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.danialepaco.framework;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danialepaco.FrameworkDemo;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -501,11 +507,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2499F85D235779EF0006908C /* Build configuration list for PBXNativeTarget "framework" */ = {
+		2499F8722357B0EF0006908C /* Build configuration list for PBXNativeTarget "FrameworkDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2499F85E235779EF0006908C /* Debug */,
-				2499F85F235779EF0006908C /* Release */,
+				2499F8732357B0EF0006908C /* Debug */,
+				2499F8742357B0EF0006908C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
